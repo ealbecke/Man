@@ -1,0 +1,6 @@
+pip3 uninstall pipenv
+python3 -m pip install pipenv --user
+mkdir test_pipenv
+cd test_pipenv
+python3 -m pipenv install requests
+python3 -m pipenv graph

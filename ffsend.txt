@@ -1,0 +1,3 @@
+ffsend upload <path/to/file>
+ffsend download <path/to/file>
+

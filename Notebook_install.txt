@@ -1,0 +1,31 @@
+
+1- Mettre les lignes suivantes dans le ~/.bashrc
+
+function notebooks {
+   # workon lux;
+	
+   cd /home/albecker/PycharmProjects/notebooks;
+
+   if [[ $# -ne 0 ]]; then
+       ./manage.py $@
+   fi
+}
+alias sb='notebooks'
+notebook () {
+   if pgrep -f "ipython3.*notebook" > /dev/null
+   then
+       firefox http://127.0.0.1:8889
+   else
+       pushd /home/albecker/PycharmProjects/notebooks
+       nohup ipython3 notebook --port 8889 $1 &
+       popd
+   fi
+}
+
+2- sudo apt-get install ipython3 python3-notebook (tabulation pour l'autocompletion)
+3- cd Documents/Workspace
+4- mkdir notebooks
+5- cd notebooks
+6- pipenv install ipykernel --three
+7- pipenv run ipython kernel install --user --name=notebooks
+# il est maintenant possible de choisir notebooks dans les kernels

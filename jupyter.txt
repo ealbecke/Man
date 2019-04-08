@@ -1,0 +1,8 @@
+- Go to the jupyter folder (ex: '/home/albecker/PycharmProjects/jupyter')
+
+
+- To launch jupyter on the existing environment (and so with the installed package):
+	- pipenv run python -m ipykernel install --user --name mygreatenv --display-name "My Great Env"
+	THEN
+	- Pipenv run jupyter notebook
+

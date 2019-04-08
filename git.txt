@@ -1,0 +1,4 @@
+git init
+git remote add origin projet/url.git
+#git remote add origin master Projet/url.git
+git pull origin master

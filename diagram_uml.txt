@@ -1,0 +1,9 @@
+pipenv install pygraphviz ou pyparsing et pydot
+Rajouter dans setting:
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
+
+python3 manage.py graph_models -a -g -o  my_project.png

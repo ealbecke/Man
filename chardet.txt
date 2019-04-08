@@ -1,0 +1,4 @@
+Ouvrir l'IDLE
+import chardet
+data = open(r'path/file.txt', 'rb').readline()
+print(chardet.detect(data)

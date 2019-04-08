@@ -1,0 +1,4 @@
+- Open Terminal
+- Launch: `anaconda-navigator`
+- Open the navigator / then launch 'jupyter notebook'
+- Will open jupyter on `localhost:8888/tree`
