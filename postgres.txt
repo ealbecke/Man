@@ -1,6 +1,14 @@
-\l                                              lister les BDD
-CREATE DATABASE test;                           Creer une DB
-\connect db                                     Se connecter a une base
-SELECT * FROM pg_catalog.pg_tables;             Afficher toutes les tables de la DB
+#lister les BDD:
+	\l
 
-SELECT table_name FROM information_schema.tables WHERE table_schema='public' AND table_type='BASE TABLE';  => Affiche toute les table de 'public'
+#Creer une DB:
+	CREATE DATABASE test;
+
+#Se connecter a une base:
+	\connect db
+
+#Afficher toutes les tables de la DB:
+	SELECT * FROM pg_catalog.pg_tables;
+
+#Afficher toutes les tables 'public' de la DB:
+	SELECT table_name FROM information_schema.tables WHERE table_schema='public' AND table_type='BASE TABLE';
