@@ -1,4 +1,6 @@
+echo "# BlaBla" >> README.md
 git init
-git remote add origin projet/url.git
-#git remote add origin master Projet/url.git
-git pull origin master
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ealbecke/<YourRepository>.git
+git push -u origin master

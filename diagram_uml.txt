@@ -1,9 +1,11 @@
-pipenv install pygraphviz ou pyparsing et pydot
-Rajouter dans setting:
+- pipenv install pygraphviz ou pyparsing et pydot
 
-GRAPH_MODELS = {
-  'all_applications': True,
-  'group_models': True,
-}
+- Add to Django setting:
 
+	GRAPH_MODELS = {
+	  'all_applications': True,
+	  'group_models': True,
+	}
+
+#Generate the graph
 python3 manage.py graph_models -a -g -o  my_project.png

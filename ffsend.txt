@@ -1,3 +1,6 @@
-ffsend upload <path/to/file>
+#UPLOAD/DOWNLOAD data smaller/equal to 1Go
+
+ffsend upload <path/to/file> #Then share the link
 ffsend download <path/to/file>
 
+`ffsend --help` to check for a password or to crypt data...
