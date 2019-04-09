@@ -1,9 +1,18 @@
+## To create and init project
 echo "# BlaBla" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/ealbecke/<YourRepository>.git
 git push -u origin master
+
+
+## To pull a repo
+git init
+git remote add origin projet/url.git
+#git remote add origin master Projet/url.git
+git pull origin master
+
 
 #To save username/password in cache
 git config --global credential.helper 'cache --timeout=86400'
