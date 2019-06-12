@@ -1,0 +1,6 @@
+To generate the ssh key:
+	ssh-keygen -b 4096
+
+To get the ssh key:
+	/home/albecker/.ssh/id_rsa.pub
+		=> Give/put this file on the server

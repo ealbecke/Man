@@ -1,0 +1,6 @@
+sudo docker-compose exec web /usr/bin/python3 manage.py
+
+docker container rm $(docker container ls -al)
+docker volume rm $(docker volume ls -al)
+
+docker exec -it your-db-container psql -Upostgres

@@ -1,0 +1,2 @@
+Clear redis database:
+	redis-cli flushall
