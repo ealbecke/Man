@@ -4,3 +4,5 @@ docker container rm $(docker container ls -al)
 docker volume rm $(docker volume ls -al)
 
 docker exec -it your-db-container psql -Upostgres
+
+docker-compose -f docker-compose.yml up -d YourService  => Up only one service

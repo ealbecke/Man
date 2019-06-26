@@ -1,0 +1,21 @@
+DELETE FROM sql_metrics  WHERE 1=1;
+DELETE FROM table_columns  WHERE 1=1;
+DELETE FROM tables WHERE 1=1;
+DELETE FROM dbs WHERE 1=1;
+DELETE FROM dashboard_slices WHERE 1=1;
+DELETE FROM slices WHERE 1=1;
+DELETE FROM dashboards WHERE 1=1;
+
+
+
+drop sequence sql_metrics_id_seq CASCADE;
+
+
+drop table slices CASCADE;
+drop TABLE table_columns ;
+DELETE FROM  public.table_columns WHERE 1=1;
+
+
+drop sequence table_columns_table_id CASCADE;
+drop sequence table_columns_id_seq CASCADE;
+	
