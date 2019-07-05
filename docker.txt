@@ -6,3 +6,6 @@ docker volume rm $(docker volume ls -al)
 docker exec -it your-db-container psql -Upostgres
 
 docker-compose -f docker-compose.yml up -d YourService  => Up only one service
+
+#When instance still running when docker down:
+	docker system prune

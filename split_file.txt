@@ -1,0 +1,6 @@
+#Spliter file in part of 700MB:
+	`split -b 700M FILE_INPUT.txt`
+	=> It will create multiple files begin by xa...
+ 
+#Join file after split:
+	cat xa* > File_OUTPUT.txt
