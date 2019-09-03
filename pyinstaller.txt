@@ -1,0 +1,29 @@
+Pyinstaller is use to create executable file
+
+Installation:
+	`pip isntall pyinstaller`
+
+First step:
+	Create a file at the top of the project which will be call to launch the project. Ex: cli.py or launch.py)
+
+		launch.py:
+			from ProjectFile import MethodToLaunch
+			if __name__ == main():
+				MethodToLaunch()
+
+Second Step:
+	launch the command:
+		pyinstaller < --add-data SRC;DEST> <--onefile> launch.py
+
+	=> The command will create 3 things:
+		- file.spec (file) (launch.spec in our case)
+			The file contains informations used to create the executable
+			Must be modify if we want to customize the next executable built. In this case the command to build the next .exe must be: `pyinstaller <NameOfSpecFile.spec>`
+
+		- build (directory)
+			 Not very useful, only for debugging
+			No need toi modify it
+
+		- dist (directory)
+			It contains the executable to lauch
+			The architecture of this directory can change according to the options used to build the .exe (ex --onefile or --onedir))

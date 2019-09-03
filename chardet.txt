@@ -1,3 +1,3 @@
 import cchardet as chardet
 data = open(r'path/file.txt', 'rb').readline()
-print(chardet.detect(data)
+print(chardet.detect(data))

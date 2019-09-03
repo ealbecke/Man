@@ -9,3 +9,14 @@ docker-compose -f docker-compose.yml up -d YourService  => Up only one service
 
 #When instance still running when docker down:
 	docker system prune
+
+
+#mode DEV
+docker-compose -f docker-compose.yml -f docker-compose-dev.yml up
+
+
+#mode PROD
+docker-compose -f docker-compose.yml -f docker-compose-images.yml up -d
+
+docker run --rm -e POSTGRES_PASSWORD=XXXXX -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres:alpinesudo rm -rf ~/docker/volumes/postgres/ && mkdir ~/docker/volumes/postgres
+docker container kill <CONTAINER-NAME>
