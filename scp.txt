@@ -1,2 +1,5 @@
 #Send file from computer to server:
 	scp file1 ip_server_addr:/path/destination/.
+
+#Send from server to local:
+	scp addr_server:/tmp/<FILE> .

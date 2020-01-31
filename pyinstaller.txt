@@ -1,7 +1,7 @@
 Pyinstaller is use to create executable file
 
 Installation:
-	`pip isntall pyinstaller`
+	`pip install pyinstaller`
 
 First step:
 	Create a file at the top of the project which will be call to launch the project. Ex: cli.py or launch.py)
@@ -27,3 +27,7 @@ Second Step:
 		- dist (directory)
 			It contains the executable to lauch
 			The architecture of this directory can change according to the options used to build the .exe (ex --onefile or --onedir))
+
+[EXAMPLE]
+
+pyinstaller --onefile --add-data dir/tools;dir/tools --icon=dir/logo.ico dirr/app.py

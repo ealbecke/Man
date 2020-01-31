@@ -1,0 +1,2 @@
+#Zip files to folder
+	zip -r output_file.zip file1 folder1
